@@ -3,22 +3,113 @@ body, html {
   padding: 0;
   color: #222;
   font-family: Roboto, arial, sans-serif;
+  background: #d3d3d3;
 }
 
 .header {
    width: 100%;
+   min-width: 1100px;
    position: fixed;
    top: 0;
+   height: 50px;
+   vertical-align: middle;
+   background: #fff;
+   z-index: 2;
 }
 
-.header ul {
+.header ul.left {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  float: left;
+  margin-left: 20px;
+  width: 75%:
 }
 
 .header li {
-  display: inline;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+
+}
+
+.header li:first-child {
+  width: 30px;
+  color: #B6B6B4;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.header li img {
+  margin-left: 0;
+  padding: 0;
+}
+
+.header form {
+  margin-left: 40px;
+}
+
+.header input {
+  height: 20px;
+  min-width: 500px;
+  vertical-align: top;
+}
+
+.header form i {
+  margin-left: -7px;
+  border-radius: 2px;
+  height: 20px;
+  border: solid 1px #ddd;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  padding: 2px 5px 2px 5px;
+  vertical-align:top;
+}
+
+.header ul.right {
+  float: right;
+  width: 25%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+
+ul.right li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+ul.right button {
+  border-radius: 2px;
+  height: 25px;
+  border: solid 1px #ddd;
+  background-color: #f8f8f8;
+  font-size: 12px;
+  padding: 5px 5px 10px 5px;
+  vertical-align: middle;
+  width: 60px;
+}
+
+ul.right i {
+  width: 10px;
+  color: #B6B6B4;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 5px;
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+ul.right img {
+  width: 34px;
+  height: 32px;
+  margin-left: 0px;
+  margin-right: 10px;
+  padding: 0px;
 }
 
 .container {
@@ -58,7 +149,7 @@ body, html {
 .nonvideo {
   margin-top: 10px;
   margin-bottom: 0px;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   background: #fff;
 }
 
@@ -72,7 +163,7 @@ h1 {
 }
 
 .info {
-  width: 80%;
+  width: 75%;
   padding-bottom: 3px;
   border-bottom: solid 1px #d3d3d3;
   float: left;
@@ -109,7 +200,7 @@ h1 {
 }
 
 .likes {
-  width: 20%;
+  width: 25%;
   border-bottom: solid 3px #167AC6;
   padding-bottom: 0px;
   float: right;
@@ -121,9 +212,131 @@ h1 {
 }
 
 .action {
-  clear: both;
+  float: left;
+  margin: 0;
+  width: 75%;
+  vertical-align: middle;
+  color: #848482;
+  padding-top: 10px;
+
 }
 
+.action i, .likeaction i {
+  display: inline-block;
+  padding: 10px, 10px, 10px, 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.action p, .likeaction p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.likeaction {
+  width: 25%;
+  float: right;
+  vertical-align: middle;
+  color: #848482;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.likeaction p {
+  margin-right: 0px;
+}
+
+.likeaction i {
+  margin-left: 10px;
+}
+
+p.desc {
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 3px;
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+div > p.desc:not(:first-child) {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #B6B6B4;
+}
+
+p.showmore {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+.commentform {
+  width: 100%;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  width: 100%;
+  display: block;
+}
+
+.comment ul {
+  list-style-type: none;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.comment li {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.comment ul li img {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+  float: left;
+  vertical-align: top;
+}
+
+.commenttext {
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 60px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.commentform img {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: top;
+}
+
+.commentform input {
+  display: inline-block;
+  height: 48px;
+  min-width: 560px;
+  max-width: 700px;
+  vertical-align: top;
+}
+
+.commentsort {
+  display: block;
+  width: 100%;
+}
 .sidebar {
   float: right;
   width: 400px;
@@ -144,9 +357,102 @@ h1 {
   display: block;
   width: 100%;
   background: #fff;
-  }
+  padding: 10px 10px 5px 10px;
+}
+
+
+div.sidebar-content > ul > li:nth-child(2) {
+  border-bottom: solid 1px #d3d3d3;
+}
+
+div.autoplay {
+  display: block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.autoplay p {
+  float: left;
+  display: inline-block  font-size: 12px;
+  line-height: 5px;
+  vertical-align: middle;
+}
+
+div.autoplay img {
+  float: right;
+  text-align: right;
+  width: 125px;
+  vertical-align: middle;
+}
+
+.sibebar-content li img{
+  width: 120;
+  height: 90;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.relateddesc, .autoplay p{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 5px;
+  vertical-align: top;
+}
+
+.relateddesc p {
+  word-wrap: break-word;
+}
 
 .footer {
   clear: both;
+  background: #fff;
 }
 
+div.main-footer {
+  display: block;
+  min-width: 1100px;
+  background: #fff;
+  border-bottom: solid 1px #ddd;
+}
+
+div.main-footer ul,
+div.secondary-footer ul {
+  list-style-type: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+div.main-footer li, div.secondary-footer li{
+  display: inline-block;
+  margin: 10px 5px 10px 5px;
+  vertical-align: middle;
+}
+
+div.main-footer button, .commentsort button {
+  vertical-align: top;
+  background-color: #f8f8f8;
+  border: solid 1px #ddd;
+  font: 12px;
+  font-weight: bold;
+  height: 29px;
+  border-radius: 2px;
+  width: auto;
+  padding: 2px 8px 2px 8px;
+}
+
+div.secondary-footer {
+   font-size: 14px;
+   width: 100%;
+   margin-top: 10px;
+   background: #fff;
+}
+
+
+div.secondary-footer ul:first-child {
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
