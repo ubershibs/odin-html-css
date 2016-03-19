@@ -6,3 +6,5 @@ I'm completing the work in this repo as part of The Odin Project's course on HTM
 * Youtube - Recreate a Youtube video page to practice embedding images and video.
 * Mint - Recreate the Mint signup page to practice styling forms.
 * New York Times (in progress) - Practicing layouts/positioning.
+2
+
