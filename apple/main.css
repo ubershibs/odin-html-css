@@ -1,0 +1,19 @@
+body {
+  background: #999;
+}
+
+.apple {
+  background-image: url('http://www.apple.com/ac/globalnav/2.0/en_US/images/ac-globalnav/globalnav/bag/image_large.svg');
+  height: 100px;
+  width: 100px;
+  content: ".";
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
