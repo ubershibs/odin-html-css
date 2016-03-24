@@ -7,3 +7,4 @@ I'm completing the work in this repo as part of The Odin Project's course on HTM
 * Mint - Recreate the Mint signup page to practice styling forms.
 * New York Times - Practicing layouts/positioning.
 * Apple's home page - For more practice using images as backgrounds and creating layouts.
+* The Next Web (tnw) - For practice with responsive design.
