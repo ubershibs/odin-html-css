@@ -167,7 +167,7 @@ header#nav #tnw {
 	z-index: 1;
 }
 
-#topnewsheader {
+#siteheader, #navheder, #topnewsheader {
 	position: absolute;
 	display: block;
 	top: -100px
