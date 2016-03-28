@@ -5,23 +5,228 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <meta name="description" content="A clone of the newsweek site for The Odin Project's HTML/CSS Course">
+    <meta name="author" content="Luke Walker">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap -->
+    <title>Newsweek clone by Luke Walker</title>
+
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="css/main2.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <body>
+    <h1 class="hidden">Newsweek</h1>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top"><h2 class="hidden">Navigation</h2>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo-big" class="navbar-brand visible-md visible-lg" href="#"></a>
+          <a id="logo-small" class="navbar-brand visible-sm visible-xs" href="#"></a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="navbar-left" class="nav navbar-nav">
+            <li class="visible-xs"><div id="search" class="form-group has-feedback">
+              <input type="text" class="form-control" placeholder="Search" />
+              <i class="glyphicon glyphicon-search form-control-feedback"></i>
+              </div></li>
+            <li><a href="#">U.S.</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Tech & Science</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Opinion</a></li>
+            <li><a href="#" class="glyphicon glyphicon-search hidden-xs"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm hidden-md">
+            <li class="visible-xs"><div id="subscribe2"></div><div href="#" class="glyphicon glyphicon-map-marker"></div><div href="#">Sign In</div></li>
+            <li><a id="subscribe" class="hidden-xs"></a></li>
+            <li><a href="#" class="glyphicon glyphicon-map-marker hidden-xs"></a></li>
+            <li><a href="#" class="hidden-xs">Sign In</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- Body content-->
+    <div id="main" class="container-fluid">
+      <h2 class="hidden">Lead Stories</h2>
+      <div class="row">
+        <div class="col-md-9">
+          <article class="main-story">
+            <img src="images/1.jpg" class="img-responsive">
+            <div class="info">
+              <span class="section">World</span>
+              <h3>Pope Francis: Combat Terrorism with 'Weapons of Love'</h3>
+              <p>In Easter message, pontiff mentions recent attacks in Brussels, Turkey, Nigeria, Chad, Cameroon, Ivory Coast and Iraq.</p>
+            </div>
+          </article>
+          <article class="second-lead col-md-6">
+            <img src="images/2.jpg" class="img-responsive">
+            <div class="info">
+              <span class="section">U.S.</span>
+              <h3>Clinton, Sanders Shift Focus to ‘Pivotal’ Wisconsin</h3>
+              <p>A win for Sanders is make-or-break in the Badger State.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-3 latest-wrapper">
+          <div class="latest">
+            <h2>Latest Headlines</h2>
+            <ul>
+              <li class="bullet">Facebook Apologizes for 'Safety Check' Far From Attack</li>
+              <li class="bullet">De Niro Reversal on Anti-Vaccination Film Hailed</li>
+              <li class="bullet">Clinton, Sanders Shift Focus to ‘Pivotal’ Wisconsin</li>
+              <li class="bullet">Quora Question: How Was the Orbit of ISS Decided?</li>
+            </ul>
+            <div class="headlines">
+              See all headlines
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="hidden">Also in the news</h2>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 third">
+          <article>
+            <img src="images/3.jpg" class="img-responsive">
+            <div class="info">
+              <span class="section">Culture</span>
+              <h3>De Niro Reversal on Anti-Vaccination Film Hailed</h3>
+              <p>The Tribeca Film Festival creator agreed to pull a controversial film about vaccines and autism.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 third">
+          <article>
+            <img src="images/4.jpg" class="img-responsive hidden-xs hidden-sm">
+            <div class="info">
+              <span class="section">Culture</span>
+              <h3>Remember Jim Bakker? He's Back on TV</h3>
+              <p>The disgraced televangelist is again warning his flock that end times are nigh, so they’d better send him a check, pronto.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 third">
+          <article>
+            <img src="images/5.jpg" class="img-responsive hidden-xs hidden-sm">
+            <div class="info">
+              <span class="section">World</span>
+              <h3>Pope Francis: Combat Terrorism With 'Weapons of Love'</h3>
+              <p>In Easter message, pontiff mentions recent attacks in Brussels, Turkey, Nigeria, Chad, Cameroon, Ivory Coast and Iraq.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 third">
+          <article>
+            <div class="info">
+              <span class="section">Culture</span>
+              <h3>Ken Burns Talks Jackie Robinson and his Latest Film</h3>
+              <p>The iconic documentarian interviewed everyone from Robinson’s wife to President Obama and the first lady for his new film.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 third">
+          <article>
+            <div class="info">
+              <span class="section">Tech & Science</span>
+              <h3>Take a Bird's-Eye View of Paris in 'Eagle Flight'</h3>
+              <p>A stunning game with the visuals of "Assassin's Creed" and the gravitational thrill of bungee jumping.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 third hidden-xs hidden-sm">
+          <article>
+            <div class="info">
+              <span class="section">Opinion</span>
+              <h3>Trump's Onto Something. The GOP Needs a New Storyline</h3>
+              <p>Conservatives need to tell a realistic story about the future, about change, about what America can be. Tall tales about the Reagan era aren’t going to cut it.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 third hidden-xs hidden-sm">
+          <article>
+            <div class="info">
+              <span class="section">Tech & Science</span>
+              <h3>We've Barely Begun to Tap the Sun’s Mighty Power</h3>
+              <p>There is a ceiling for solar power in the U.S., but we're not even remotely close to reaching it.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="block-title">
+            <span class="in-the-mag"></span>
+            <p class="in-the-mag-title">In the Magazine</p>
+          </div>
+        </div>
+      </div>
+      <div class="row fourth">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div id="six" class="photo"></div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 hidden-sm hidden-xs">
+          <div id="seven" class="photo"></div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 visible-lg">
+          <div id="eight" class="photo"></div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 visible-lg">
+          <div id="nine" class="photo"></div>
+        </div>
+      </div>
+    </div><!-- /container -->
+
+    <div id="gray">
+      <div id="slideshow" class="container-fluid">
+        <div class="row fifth">
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
+            <img src="images/10.jpg" class="img-responsive">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-lg-pull-9 col-md-pull-9 clearfix">
+            <div class="slide-bottom">
+              <img src="images/11.svg" class="img-responsive hidden-xs">
+              <div class="slideshow-info-wrapper">
+                <div class="slideshow-info">
+                  <h2>THE LATEST<br> NEWS IN PICTURES</h2>
+                  <div id="launch-slideshow" class="hidden-xs hidden-sm">
+                    Launch Slideshow
+                  </div>
+                  <p><span class="blue">■</span> <strong>Overcome Resistance</strong></p>
+                  <p>Toronto—Police detain a protester on March 24 after an Ontario judge found former Canadian radio host Jian Ghomeshi.</p>
+                 <p id="slideshow-count">58 PHOTOS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
