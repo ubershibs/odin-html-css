@@ -8,3 +8,4 @@ I'm completing the work in this repo as part of The Odin Project's course on HTM
 * New York Times - Practicing layouts/positioning.
 * Apple's home page - For more practice using images as backgrounds and creating layouts.
 * The Next Web (tnw) - For practice with responsive design.
+* Newsweek - Implementing a layout using Bootstrap.
