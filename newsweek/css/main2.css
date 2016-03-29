@@ -458,7 +458,7 @@ h2, h3, .section {
 
 /* Slideshow */
 .gray-section {
-  background-color: #282828;
+  background-color: rgb(24, 24, 24);
   width: 100%;
   height: auto;
 }
